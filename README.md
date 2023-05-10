@@ -1,18 +1,6 @@
 # DynamicRouteActiveDisactive
 Dynamic FastApi Route Activation/Disactivation
 
-## Basic operation
-
-```python
-from fastapi import FastAPI, deprecated
-
-app = FastAPI()
-
-@deprecated(reason="This endpoint is no longer supported.")
-@app.get("/old_endpoint")
-async def old_endpoint():
-    return {"message": "This endpoint is deprecated."}
-```
 
 ## Solution to dynamic management of route activation
 
